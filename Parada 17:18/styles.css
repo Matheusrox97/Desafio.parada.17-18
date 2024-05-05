@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    ul {
+        list-style: none;
+        background: #3fcc9d;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+    }
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: #fff;
+        text-decoration: #fff;
+        text-align: center;
+        font-size: 25px;
+    }
+    ul li ul.dropdown li {
+        display: block;
+    }
+    ul li ul.dropdown {
+        width: 100%;
+        background: #3a705e;
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+    ul li a:hover {
+        background: #4c8b5b;
+    }
+    ul li:hover ul.dropdown {
+        display: block;
+    }
+
+/* Responsividade para Tablet */
+    @media only screen and (max-width: 768px) {
+        ul li {
+            display: block;
+        }
+    
+        ul li ul.dropdown {
+            position: static;
+            width: auto;
+        }
+    }
